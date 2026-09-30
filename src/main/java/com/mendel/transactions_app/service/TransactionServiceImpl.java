@@ -25,9 +25,9 @@ public class TransactionServiceImpl implements TransactionService {
     public Transaction save(Long id, TransactionRequest request) {
         Transaction transaction = new Transaction();
         transaction.setId(id);
-        transaction.setAmount(request.getAmount());
-        transaction.setType(request.getType());
-        transaction.setParentId(request.getParentId());
+        transaction.setAmount(request.amount());
+        transaction.setType(request.type());
+        transaction.setParentId(request.parentId());
         return transactionRepository.save(transaction);
     }
 

@@ -24,7 +24,7 @@ public class TransactionController {
         return new StatusResponse("ok");
     }
 
-    @GetMapping("types/{type}")
+    @GetMapping("/types/{type}")
     public List<Long> getTransactionsByType(@PathVariable String type) {
         return transactionService.getTransactionsByType(type);
     }

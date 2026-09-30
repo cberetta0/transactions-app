@@ -3,7 +3,6 @@ package com.mendel.transactions_app.controller;
 import com.mendel.transactions_app.dto.StatusResponse;
 import com.mendel.transactions_app.dto.SumResponse;
 import com.mendel.transactions_app.dto.TransactionRequest;
-import com.mendel.transactions_app.model.Transaction;
 import com.mendel.transactions_app.service.TransactionServiceImpl;
 import org.springframework.web.bind.annotation.*;
 
